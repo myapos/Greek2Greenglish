@@ -19,3 +19,4 @@ Instructions
 Notes
 
 Java has to be installed in his system in order to run this application
+This application is published unde GPL license
