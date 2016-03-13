@@ -14,12 +14,12 @@ import java.net.URI;
  *
  * @author myros
  */
-public class AlertMessage extends javax.swing.JFrame {
+public class AboutPanel extends javax.swing.JFrame {
 
     /**
      * Creates new form AboutPanel
      */
-    public AlertMessage() {
+    public AboutPanel() {
         initComponents();
     }
 
@@ -36,11 +36,10 @@ public class AlertMessage extends javax.swing.JFrame {
         Back = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         jEditorPane1 = new javax.swing.JEditorPane();
-        exit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        contact.setText("<html> Contact Info : <a href=\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\">myapos@yahoo.com</a><br>v:1.0 © 2016</html>\\\\\\\"");
+        contact.setText("<html> Contact Info : <a href=\"\">myapos@yahoo.com</a><br>v:1.0 © 2016</html>\"");
         contact.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         contact.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -55,18 +54,10 @@ public class AlertMessage extends javax.swing.JFrame {
             }
         });
 
-        jEditorPane1.setEditable(false);
         jEditorPane1.setContentType("text/html"); // NOI18N
-        jEditorPane1.setText("<html><head>  </head> <body><strong>Please check your root directory.</strong>  <br> <br> Refactored files are created with format name(s) :<br> <strong>new_+original_name(s)</strong>. Press <strong> OK </strong>if you want to continue <br> refactoring new files or <strong> Exit </strong>if you want to exit this application.  </body> </html>");
+        jEditorPane1.setText("<html> <head>  </head> <body> <strong> About Greek2Greenglish </strong> <br><br> This application is for renaming filenames and directories from Greek to greenglish.<br> <br> The program is written in Java language and is in the form of executable jar.<br> You can download either jar file or source code.<br> <br>       <strong>Instructions</strong> <br> <br> Download jar file and double click to it.<br> Then a simple GUI is  displayed. <br>       <strong>Notes</strong> <br> <br> Java has to be installed in user's system in order to run this application. <br> This application is published under GPL license and is free of charge.<br> You can get a view of the code in github repository. <br> <a href = \"https://github.com/myapos/Greek2Greenglish\">https://github.com/myapos/Greek2Greenglish</a>    </body> </html>");
         jEditorPane1.setToolTipText("");
         jScrollPane2.setViewportView(jEditorPane1);
-
-        exit.setText("Exit!");
-        exit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exitActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -76,25 +67,22 @@ public class AlertMessage extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(contact, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 111, Short.MAX_VALUE)
-                        .addComponent(Back)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(exit))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Back))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
+                        .addComponent(jScrollPane2)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 308, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(contact, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Back)
-                    .addComponent(exit)))
+                    .addComponent(Back)))
         );
 
         pack();
@@ -115,11 +103,6 @@ public class AlertMessage extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_BackActionPerformed
 
-    private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
-        // TODO add your handling code here:
-        System.exit(0);
-    }//GEN-LAST:event_exitActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -137,21 +120,20 @@ public class AlertMessage extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(AlertMessage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AboutPanel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(AlertMessage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AboutPanel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(AlertMessage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AboutPanel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(AlertMessage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AboutPanel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new AlertMessage().setVisible(true);
+                new AboutPanel().setVisible(true);
             }
         });
     }
@@ -159,7 +141,6 @@ public class AlertMessage extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Back;
     private javax.swing.JLabel contact;
-    private javax.swing.JButton exit;
     private javax.swing.JEditorPane jEditorPane1;
     private javax.swing.JScrollPane jScrollPane2;
     // End of variables declaration//GEN-END:variables

@@ -26,24 +26,21 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="selectFiles" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="selectDirectory" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                      <Component id="refactorText" min="-2" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="contact" min="-2" max="-2" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <Component id="contact" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="selectFiles" min="-2" pref="125" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="about" min="-2" pref="118" max="-2" attributes="0"/>
                   </Group>
               </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="exit" pref="105" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="0" pref="64" max="32767" attributes="0"/>
-              <Component id="jLabel1" min="-2" pref="305" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -55,8 +52,8 @@
               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="selectFiles" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="selectDirectory" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="refactorText" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="about" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="exit" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
               <Component id="contact" min="-2" pref="60" max="-2" attributes="0"/>
@@ -67,7 +64,7 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Welcome to Greek2Greenglish Application"/>
+        <Property name="text" type="java.lang.String" value="Welcome to Greek2Greenglish"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="selectFiles">
@@ -78,31 +75,31 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="selectFilesActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="selectDirectory">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Select Directory"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="selectDirectoryActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="refactorText">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Refactor Text File"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="refactorTextActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JLabel" name="contact">
       <Properties>
-        <Property name="text" type="java.lang.String" value="&lt;html&gt; Contact Info : &lt;a href=\u005c\u005c\u005c&quot;\u005c\u005c\u005c&quot;&gt;myapos@yahoo.com&lt;/a&gt;&lt;/html&gt;\u005c&quot;" containsInvalidXMLChars="true"/>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt; Contact Info : &lt;a href=\u005c\u005c\u005c&quot;\u005c\u005c\u005c&quot;&gt;myapos@yahoo.com&lt;/a&gt;&lt;br&gt;v:1.0 &#xa9; 2016&lt;/html&gt;\u005c&quot;" containsInvalidXMLChars="true"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
           <Color id="Hand Cursor"/>
         </Property>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="sendEmail"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="about">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="About me"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="aboutActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="exit">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Exit!"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="exitActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

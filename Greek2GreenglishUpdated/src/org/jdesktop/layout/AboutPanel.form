@@ -27,10 +27,8 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Component id="contact" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="111" max="32767" attributes="0"/>
+                      <EmptySpace pref="270" max="32767" attributes="0"/>
                       <Component id="Back" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="exit" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
@@ -45,12 +43,11 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jScrollPane2" min="-2" pref="128" max="-2" attributes="0"/>
-              <EmptySpace pref="15" max="32767" attributes="0"/>
+              <Component id="jScrollPane2" pref="351" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="contact" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="Back" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="exit" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
       </Group>
@@ -87,19 +84,11 @@
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
             <Property name="contentType" type="java.lang.String" value="text/html" noResource="true"/>
-            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;head&gt;  &lt;/head&gt; &lt;body&gt;&lt;strong&gt;Please check your root directory.&lt;/strong&gt;  &lt;br&gt; &lt;br&gt; Refactored files are created with format name(s) :&lt;br&gt; &lt;strong&gt;new_+original_name(s)&lt;/strong&gt;. Press &lt;strong&gt; OK &lt;/strong&gt;if you want to continue &lt;br&gt; refactoring new files or &lt;strong&gt; Exit &lt;/strong&gt;if you want to exit this application.  &lt;/body&gt; &lt;/html&gt;"/>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt; &lt;head&gt;  &lt;/head&gt; &lt;body&gt; &lt;strong&gt; About Greek2Greenglish &lt;/strong&gt; &lt;br&gt; &lt;br&gt; This application is for renaming filenames and directories from Greek to greenglish.&lt;br&gt; &lt;br&gt; The program is written in Java language and is in the form of executable jar.&lt;br&gt; You can download either jar file or source code.&lt;br&gt; &lt;br&gt;       &lt;strong&gt;Instructions&lt;/strong&gt; &lt;br&gt; &lt;br&gt; Download jar file and double click to it.&lt;br&gt; Then a simple GUI is  displayed. &lt;br&gt; &lt;br&gt;       &lt;strong&gt;Notes&lt;/strong&gt; &lt;br&gt; &lt;br&gt; Java has to be installed in user&apos;s system in order to run this application. &lt;br&gt; This application is published under GPL license and is free of charge.&lt;br&gt; You can get a view of the code in github repository. &lt;br&gt; &lt;a href = \u005c&quot;https://github.com/myapos/Greek2Greenglish\u005c&quot;&gt;https://github.com/myapos/Greek2Greenglish&lt;/a&gt;    &lt;/body&gt; &lt;/html&gt;" containsInvalidXMLChars="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="exit">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Exit!"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="exitActionPerformed"/>
-      </Events>
-    </Component>
   </SubComponents>
 </Form>

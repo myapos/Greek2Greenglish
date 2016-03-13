@@ -34,13 +34,13 @@ public class StartPanel extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         selectFiles = new javax.swing.JButton();
-        selectDirectory = new javax.swing.JButton();
-        refactorText = new javax.swing.JButton();
         contact = new javax.swing.JLabel();
+        about = new javax.swing.JButton();
+        exit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Welcome to Greek2Greenglish Application");
+        jLabel1.setText("Welcome to Greek2Greenglish");
 
         selectFiles.setText("Select Files");
         selectFiles.addActionListener(new java.awt.event.ActionListener() {
@@ -49,25 +49,25 @@ public class StartPanel extends javax.swing.JFrame {
             }
         });
 
-        selectDirectory.setText("Select Directory");
-        selectDirectory.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                selectDirectoryActionPerformed(evt);
-            }
-        });
-
-        refactorText.setText("Refactor Text File");
-        refactorText.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                refactorTextActionPerformed(evt);
-            }
-        });
-
-        contact.setText("<html> Contact Info : <a href=\\\\\\\"\\\\\\\">myapos@yahoo.com</a></html>\\\"");
+        contact.setText("<html> Contact Info : <a href=\\\\\\\"\\\\\\\">myapos@yahoo.com</a><br>v:1.0 © 2016</html>\\\"");
         contact.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         contact.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 sendEmail(evt);
+            }
+        });
+
+        about.setText("About me");
+        about.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                aboutActionPerformed(evt);
+            }
+        });
+
+        exit.setText("Exit!");
+        exit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                exitActionPerformed(evt);
             }
         });
 
@@ -78,20 +78,18 @@ public class StartPanel extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(contact, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(selectFiles)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(selectDirectory)
-                        .addGap(26, 26, 26)
-                        .addComponent(refactorText))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(contact, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addComponent(selectFiles, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(about, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addComponent(exit, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)
                 .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 64, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 305, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(59, 59, 59))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(74, 74, 74)
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -101,8 +99,8 @@ public class StartPanel extends javax.swing.JFrame {
                 .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(selectFiles)
-                    .addComponent(selectDirectory)
-                    .addComponent(refactorText))
+                    .addComponent(about)
+                    .addComponent(exit))
                 .addGap(33, 33, 33)
                 .addComponent(contact, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -116,18 +114,6 @@ public class StartPanel extends javax.swing.JFrame {
         selectTextMyFiles.setVisible(true);  
     }//GEN-LAST:event_selectFilesActionPerformed
 
-    private void selectDirectoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selectDirectoryActionPerformed
-        // TODO add your handling code here:
-        //MyFileChooser selectMyDirectory = new MyFileChooser();
-        //selectMyDirectory.setVisible(true);
-    }//GEN-LAST:event_selectDirectoryActionPerformed
-
-    private void refactorTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refactorTextActionPerformed
-        // TODO add your handling code here:
-        //MyFileChooser refactorMyText = new MyFileChooser();
-        //refactorMyText.setVisible(true);
-    }//GEN-LAST:event_refactorTextActionPerformed
-
     private void sendEmail(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sendEmail
         // TODO add your handling code here:
                 try {
@@ -136,6 +122,17 @@ public class StartPanel extends javax.swing.JFrame {
             //It looks like there's a problem
             }
     }//GEN-LAST:event_sendEmail
+
+    private void aboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aboutActionPerformed
+        // TODO add your handling code here:
+        AboutPanel about = new AboutPanel();
+        about.setVisible(true);  
+    }//GEN-LAST:event_aboutActionPerformed
+
+    private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_exitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -173,10 +170,10 @@ public class StartPanel extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton about;
     private javax.swing.JLabel contact;
+    private javax.swing.JButton exit;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JButton refactorText;
-    private javax.swing.JButton selectDirectory;
     private javax.swing.JButton selectFiles;
     // End of variables declaration//GEN-END:variables
 }
