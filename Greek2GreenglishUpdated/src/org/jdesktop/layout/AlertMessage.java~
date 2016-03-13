@@ -43,11 +43,6 @@ public class AlertMessage extends javax.swing.JFrame {
 
         contact.setText("<html> Contact Info : <a href=\\\"\\\">myapos@yahoo.com</a></html>\"");
         contact.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        contact.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                sendEmail(evt);
-            }
-        });
 
         jButton1.setText("OK");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -108,16 +103,6 @@ public class AlertMessage extends javax.swing.JFrame {
         System.exit(0);
         //dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void sendEmail(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sendEmail
-        // TODO add your handling code here:
-        try {
-              Desktop.getDesktop().mail(new URI("mailto:myapos@yahoo.com?subject=My%20message"));
-            } catch (URISyntaxException | IOException ex) {
-            //It looks like there's a problem
-            }
-        
-    }//GEN-LAST:event_sendEmail
         
     /**
      * @param args the command line arguments

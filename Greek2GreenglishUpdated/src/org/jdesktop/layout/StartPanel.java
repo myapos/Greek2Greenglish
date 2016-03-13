@@ -4,6 +4,12 @@
  * and open the template in the editor.
  */
 package org.jdesktop.layout;
+
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+
 /**
  *
  * @author myros
@@ -30,7 +36,7 @@ public class StartPanel extends javax.swing.JFrame {
         selectFiles = new javax.swing.JButton();
         selectDirectory = new javax.swing.JButton();
         refactorText = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        contact = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -57,7 +63,13 @@ public class StartPanel extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setText("<html> Contact Info: <a href=\"mailto:myapos@yahoo.com?Subject=My%message\" target=\"_top\">myapos@yahoo.com</a>");
+        contact.setText("<html> Contact Info : <a href=\\\\\\\"\\\\\\\">myapos@yahoo.com</a></html>\\\"");
+        contact.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        contact.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                sendEmail(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -73,7 +85,7 @@ public class StartPanel extends javax.swing.JFrame {
                         .addGap(26, 26, 26)
                         .addComponent(refactorText))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(contact, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -92,7 +104,7 @@ public class StartPanel extends javax.swing.JFrame {
                     .addComponent(selectDirectory)
                     .addComponent(refactorText))
                 .addGap(33, 33, 33)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(contact, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -115,6 +127,15 @@ public class StartPanel extends javax.swing.JFrame {
         //MyFileChooser refactorMyText = new MyFileChooser();
         //refactorMyText.setVisible(true);
     }//GEN-LAST:event_refactorTextActionPerformed
+
+    private void sendEmail(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sendEmail
+        // TODO add your handling code here:
+                try {
+              Desktop.getDesktop().mail(new URI("mailto:myapos@yahoo.com?subject=My%20message"));
+            } catch (URISyntaxException | IOException ex) {
+            //It looks like there's a problem
+            }
+    }//GEN-LAST:event_sendEmail
 
     /**
      * @param args the command line arguments
@@ -152,8 +173,8 @@ public class StartPanel extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel contact;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JButton refactorText;
     private javax.swing.JButton selectDirectory;
     private javax.swing.JButton selectFiles;
