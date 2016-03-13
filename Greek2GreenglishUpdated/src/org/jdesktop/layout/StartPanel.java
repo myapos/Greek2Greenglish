@@ -87,7 +87,7 @@ public class StartPanel extends javax.swing.JFrame {
                 .addComponent(exit, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
-                .addGap(74, 74, 74)
+                .addGap(92, 92, 92)
                 .addComponent(jLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );

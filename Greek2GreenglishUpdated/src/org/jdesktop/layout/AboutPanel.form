@@ -87,6 +87,9 @@
             <Property name="text" type="java.lang.String" value="&lt;html&gt; &lt;head&gt;  &lt;/head&gt; &lt;body&gt; &lt;strong&gt; About Greek2Greenglish &lt;/strong&gt; &lt;br&gt; &lt;br&gt; This application is for renaming filenames and directories from Greek to greenglish.&lt;br&gt; &lt;br&gt; The program is written in Java language and is in the form of executable jar.&lt;br&gt; You can download either jar file or source code.&lt;br&gt; &lt;br&gt;       &lt;strong&gt;Instructions&lt;/strong&gt; &lt;br&gt; &lt;br&gt; Download jar file and double click to it.&lt;br&gt; Then a simple GUI is  displayed. &lt;br&gt; &lt;br&gt;       &lt;strong&gt;Notes&lt;/strong&gt; &lt;br&gt; &lt;br&gt; Java has to be installed in user&apos;s system in order to run this application. &lt;br&gt; This application is published under GPL license and is free of charge.&lt;br&gt; You can get a view of the code in github repository. &lt;br&gt; &lt;a href = \u005c&quot;https://github.com/myapos/Greek2Greenglish\u005c&quot;&gt;https://github.com/myapos/Greek2Greenglish&lt;/a&gt;    &lt;/body&gt; &lt;/html&gt;" containsInvalidXMLChars="true"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="openGithubURL"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

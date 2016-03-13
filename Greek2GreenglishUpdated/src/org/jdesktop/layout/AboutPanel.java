@@ -58,6 +58,11 @@ public class AboutPanel extends javax.swing.JFrame {
         jEditorPane1.setContentType("text/html"); // NOI18N
         jEditorPane1.setText("<html> <head>  </head> <body> <strong> About Greek2Greenglish </strong> <br> <br> This application is for renaming filenames and directories from Greek to greenglish.<br> <br> The program is written in Java language and is in the form of executable jar.<br> You can download either jar file or source code.<br> <br>       <strong>Instructions</strong> <br> <br> Download jar file and double click to it.<br> Then a simple GUI is  displayed. <br> <br>       <strong>Notes</strong> <br> <br> Java has to be installed in user's system in order to run this application. <br> This application is published under GPL license and is free of charge.<br> You can get a view of the code in github repository. <br> <a href = \\\"https://github.com/myapos/Greek2Greenglish\\\">https://github.com/myapos/Greek2Greenglish</a>    </body> </html>");
         jEditorPane1.setToolTipText("");
+        jEditorPane1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                openGithubURL(evt);
+            }
+        });
         jScrollPane2.setViewportView(jEditorPane1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -103,6 +108,19 @@ public class AboutPanel extends javax.swing.JFrame {
         // TODO add your handling code here:
         dispose();
     }//GEN-LAST:event_BackActionPerformed
+
+    private void openGithubURL(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_openGithubURL
+        // TODO add your handling code here:
+        //String url= "https://github.com/myapos/Greek2Greenglish";
+          //System.out.println("Hey!!!!!");
+        try {
+           URI myURI = new URI("https://github.com/myapos/Greek2Greenglish");
+           Desktop.getDesktop().browse(myURI);
+        }
+        catch (URISyntaxException | IOException ex) {
+            //It looks like there's a problem
+        }
+    }//GEN-LAST:event_openGithubURL
 
     /**
      * @param args the command line arguments
