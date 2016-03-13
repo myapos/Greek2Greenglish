@@ -57,7 +57,7 @@ public class StartPanel extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setText("Contact Info: myapos@yahoo.com");
+        jLabel2.setText("<html> Contact Info: <a href=\"mailto:myapos@yahoo.com?Subject=My%message\" target=\"_top\">myapos@yahoo.com</a>");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -73,7 +73,7 @@ public class StartPanel extends javax.swing.JFrame {
                         .addGap(26, 26, 26)
                         .addComponent(refactorText))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()

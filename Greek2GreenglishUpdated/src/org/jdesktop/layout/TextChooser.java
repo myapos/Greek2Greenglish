@@ -92,7 +92,8 @@ private void ActionHandler(ActionEvent evt)
       }
        
        /* Display output message alert dialog */
-       
+       AlertMessage myAlert = new AlertMessage();
+       myAlert.setVisible(true);
        
      }
      else if (evt.getActionCommand() == "CancelSelection")
@@ -178,7 +179,7 @@ in.close();
 
 public File createFile(File f)
 {
-    File file = new File(f.getParent() + this.fileseparator + "new" + f.getName());
+    File file = new File(f.getParent() + this.fileseparator + "new_" + f.getName());
     System.out.println("Created file " + file.getName() + " in path " + file.getAbsolutePath());
     try
      {

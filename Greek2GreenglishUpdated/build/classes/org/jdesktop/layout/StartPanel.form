@@ -96,7 +96,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Contact Info: myapos@yahoo.com"/>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt; Contact Info: &lt;a href=&quot;mailto:myapos@yahoo.com?Subject=My%message&quot; target=&quot;_top&quot;&gt;myapos@yahoo.com&lt;/a&gt;"/>
       </Properties>
     </Component>
   </SubComponents>
