@@ -18,6 +18,6 @@ Instructions
 
 Notes
 
-Java has to be installed in user's system in order to run this application
+Java 1.8+ has to be installed in user's system in order to run this application
 This application is published under GPL license
 
