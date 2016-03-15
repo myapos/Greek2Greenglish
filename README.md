@@ -10,7 +10,7 @@ Instructions
 1. Download jar file and double click to it. Then a simple GUI is displayed. 
 2. User can select one or multiple text files with greek characters for refactoring to greenglish
 
-3. After selection user can press refactor or rename button depending on his selection and complete the process
+3. After selection user can press refactor and complete the process
 
 
 Notes
