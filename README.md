@@ -18,6 +18,7 @@ Instructions
 
 Notes
 
-Java 1.8+ has to be installed in user's system in order to run this application
+Java 1.8+ has to be installed in user's system in order to run this application. This application was designed and
+developed using Netbeans 8.02 IDE platform.
 This application is published under GPL license
 
