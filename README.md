@@ -8,9 +8,9 @@ jar file or source code.
 Instructions 
 ================
 
-1. In order to download jar file visit path 
+1. In order to download Greek2GreenglishUpdated.jar file visit path 
    https://github.com/myapos/Greek2Greenglish/tree/master/Greek2GreenglishUpdated/dist and select view raw. 
-   Then run Greek2Greenglish with double click. A simple GUI will be displayed. 
+   Then run Greek2Greenglish from command line giving java -jar Greek2GreenglishUpdated.jar. A simple GUI will be displayed. 
 2. User can select one or multiple text files with greek characters for refactoring to greenglish.
 
 3. After selection user can press refactor and complete the process.
