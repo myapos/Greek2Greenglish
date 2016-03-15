@@ -8,7 +8,8 @@ jar file or source code.
 Instructions 
 ================
 
-1. Download jar file and double click to it. Then a simple GUI is displayed. 
+1. Download jar file from path https://github.com/myapos/Greek2Greenglish/tree/master/Greek2GreenglishUpdated/dist
+   and double click to it. Then a simple GUI is displayed. 
 2. User can select one or multiple text files with greek characters for refactoring to greenglish.
 
 3. After selection user can press refactor and complete the process.
