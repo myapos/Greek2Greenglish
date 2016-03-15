@@ -21,4 +21,4 @@ developed using Netbeans 8.02 IDE platform. This application is published under 
 Screenshots
 ================
 
-![screenshot1.png](https://github.com/myapos/Greek2Greenglish/img/screenshot1.png)
+![screenshot1.png](https://github.com/myapos/Greek2Greenglish/screenshots/screenshot1.png)
