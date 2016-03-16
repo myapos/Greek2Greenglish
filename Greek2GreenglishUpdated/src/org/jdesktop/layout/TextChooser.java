@@ -202,8 +202,8 @@ public void processLine(String line, FileWriter fw)
        for (int i = 0; i < line.length(); i++)
        {
         char cur_char = line.charAt(i);
-//        int decim_char=cur_char;   
-//        System.out.println(decim_char);
+        int decim_char=cur_char;   
+       System.out.println(decim_char);
         
         char c = this.ref.Map(cur_char);
         

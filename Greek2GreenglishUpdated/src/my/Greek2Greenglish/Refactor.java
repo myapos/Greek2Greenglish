@@ -111,6 +111,8 @@ charvalue = 117;
 } else if (charvalue == 971) {
 charvalue = 117;
 }else if (charvalue == 944) {
+charvalue = 117;
+} else if (charvalue == 966) {
 charvalue = 102;
 } else if (charvalue == 967) {
 charvalue = 120;
