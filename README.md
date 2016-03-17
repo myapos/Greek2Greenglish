@@ -1,7 +1,7 @@
 Greek2Greenglish
 ================
 
-This application is for renaming filenames and directories from Greek to greenglish. 
+This application is for renaming text from Greek to greenglish. 
 The program is written in Java language and is in the form of executable jar. You can download either 
 jar file or source code.
 
