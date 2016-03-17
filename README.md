@@ -21,7 +21,7 @@ Screenshots
 
 Notes
 ================ 
-Java 1.8+ JDK has to be installed in user's system in order to run this application. This application is published under GPL license.
+Java 1.8+ JDK has to be installed in user's system in order to run this application. This application is published under MIT license.
 
 Development Tools - Other useful information
 ================
