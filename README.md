@@ -30,3 +30,5 @@ Screenshots
 ![screenshot2.png](https://github.com/myapos/Greek2Greenglish/blob/master/screenshots/screenshot2.png)
 
 ![screenshot3.png](https://github.com/myapos/Greek2Greenglish/blob/master/screenshots/screenshot3.png)
+
+![screenshot4.png](https://github.com/myapos/Greek2Greenglish/blob/master/screenshots/screenshot4.png)
