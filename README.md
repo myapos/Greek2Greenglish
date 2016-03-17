@@ -9,6 +9,17 @@ Instructions
   
   3. After selection user can press refactor or rename button depending on his selection and complete the process
 
+
+Screenshots
+  ================
+![screenshot1.png](https://github.com/myapos/Greek2Greenglish/screenshot1.png)
+
+![screenshot2.png](https://github.com/myapos/Greek2Greenglish/img/screenshot2.png)
+
+![screenshot3.png](https://github.com/myapos/Greek2Greenglish/img/screenshot3.png)
+
+![screenshot4.png](https://github.com/myapos/Greek2Greenglish/img/screenshot4.png)
+
 Notes
   
  -Java 1.8+ has to be installed in user's system in order to run this application
