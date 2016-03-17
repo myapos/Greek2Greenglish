@@ -1,5 +1,5 @@
 Instructions 
-  
+================  
   1. Download jar file and double click to it. Then a simple GUI is displayed. 
  -2. User can 
  -  a. select files whose names wants to rename
@@ -11,7 +11,7 @@ Instructions
 
 
 Screenshots
-  ================
+================
 ![screenshot1.png](https://github.com/myapos/Greek2Greenglish/blob/master/screenshots/screenshot1.png)
 
 ![screenshot2.png](https://github.com/myapos/Greek2Greenglish/blob/master/screenshots/screenshot2.png)
@@ -21,7 +21,7 @@ Screenshots
 ![screenshot4.png](https://github.com/myapos/Greek2Greenglish/blob/master/screenshots/screenshot4.png)
 
 Notes
-  
+================ 
  -Java 1.8+ has to be installed in user's system in order to run this application
  +Java 1.8+ has to be installed in user's system in order to run this application. This application was designed and
  +developed using Netbeans 8.02 IDE platform.
