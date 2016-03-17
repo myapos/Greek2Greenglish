@@ -11,6 +11,7 @@ Instructions
 1. In order to download Greek2GreenglishUpdated.jar file visit path 
    https://github.com/myapos/Greek2Greenglish/tree/master/Greek2GreenglishUpdated/dist and select view raw. 
    Then run Greek2Greenglish from command line giving java -jar Greek2GreenglishUpdated.jar. A simple GUI will be displayed. 
+   Alternatively, you can run Greek2GreenglishUpdated.jar with double click but you have to give it execution permission first.
 2. User can select one or multiple text files with greek characters for refactoring to greenglish.
 
 3. After selection user can press refactor and complete the process.
@@ -19,8 +20,7 @@ Instructions
 Notes
 ================
 
-Java 1.8+ has to be installed in user's system in order to run this application. This application was designed and
-developed using Netbeans 8.02 IDE platform. This application is published under GPL license.
+Java JDK 1.8+ has to be installed in user's system in order to run this application. This application is published under GPL license.
 
 Screenshots
 ================
@@ -32,3 +32,12 @@ Screenshots
 ![screenshot3.png](https://github.com/myapos/Greek2Greenglish/blob/master/screenshots/screenshot3.png)
 
 ![screenshot4.png](https://github.com/myapos/Greek2Greenglish/blob/master/screenshots/screenshot4.png)
+
+
+Development Tools - Other useful information
+================
+This project was developed using Netbeans IDE 8.0.2. platform. The graphical interface was designed with Swing library.
+Finally testing of the application was achieved by using JUnit 4.10 library.
+
+
+
