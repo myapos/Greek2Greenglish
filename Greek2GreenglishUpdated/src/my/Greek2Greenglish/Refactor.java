@@ -147,7 +147,7 @@ charvalue = 73;
 } else if (charvalue == 906) {
 charvalue = 73;
 } else if (charvalue == 938) {
-charvalue = 73;
+charvalue = 921;
 } else if (charvalue == 922) {
 charvalue = 75;
 } else if (charvalue == 923) {
@@ -173,9 +173,9 @@ charvalue = 84;
 } else if (charvalue == 933) {
 charvalue = 85;
 } else if (charvalue == 910) {
-charvalue = 85;
+charvalue = 89;
 } else if (charvalue == 939) {
-charvalue = 85;
+charvalue = 933;
 } else if (charvalue == 934) {
 charvalue = 70;
 } else if (charvalue == 935) {
@@ -188,7 +188,11 @@ charvalue = 89;
 charvalue = 87;
 } else if (charvalue == 911) {
 charvalue = 87;
+} else if (charvalue == 902) {
+charvalue = 65;
 }
+
+
     return (char)charvalue;
    }
 }

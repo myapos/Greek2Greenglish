@@ -661,7 +661,7 @@ public class RefactorTest {
         //fail("The test case is a prototype.");
     }
     
-     /* Tests for special case letters ά,έ,ύ,ί, ό, ΰ, ϊ , ϋ  */
+     /* Tests for special case letters ά, έ, ύ, ί, ό, ΰ, ϊ, ϋ  */
     
     @Test
     public void testMap49() {
@@ -763,8 +763,12 @@ public class RefactorTest {
     public void testMap55() {
         System.out.println("Map");
         char c = 'Ά';
+        //int charvalue1 = c;
+        //System.out.println(charvalue1);
         Refactor instance = new Refactor();
         char expResult = 'A';
+        //int charvalue2 = expResult;
+        //System.out.println(charvalue2);
         char result = instance.Map(c);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -777,6 +781,8 @@ public class RefactorTest {
         char c = 'Έ';
         Refactor instance = new Refactor();
         char expResult = 'E';
+        //int charvalue2 = expResult;
+        //System.out.println(charvalue2);
         char result = instance.Map(c);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -787,8 +793,12 @@ public class RefactorTest {
     public void testMap57() {
         System.out.println("Map");
         char c = 'Ύ';
+        int charvalue1 = c;
+        //System.out.println(charvalue1);
         Refactor instance = new Refactor();
         char expResult = 'Y';
+        int charvalue2=expResult;
+        //System.out.println(charvalue2);
         char result = instance.Map(c);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -822,6 +832,8 @@ public class RefactorTest {
     public void testMap60() {
         System.out.println("Map");
         char c = 'Ϋ';
+        int charvalue1 = c;
+        //System.out.println(charvalue1);
         Refactor instance = new Refactor();
         char expResult = 'Υ';
         char result = instance.Map(c);
@@ -834,8 +846,13 @@ public class RefactorTest {
     public void testMap61() {
         System.out.println("Map");
         char c = 'Ϊ';
+        int charvalue1 = c;
+        //System.out.println(charvalue1);
         Refactor instance = new Refactor();
         char expResult = 'Ι';
+        
+        int charvalue2=expResult;
+        //System.out.println(charvalue2);
         char result = instance.Map(c);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
