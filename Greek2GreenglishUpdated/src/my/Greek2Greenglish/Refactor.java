@@ -180,6 +180,8 @@ charvalue = 85;
 charvalue = 70;
 } else if (charvalue == 935) {
 charvalue = 88;
+} else if (charvalue == 936) {
+charvalue = 89;
 } else if (charvalue == 949) {
 charvalue = 89;
 } else if (charvalue == 937) {
