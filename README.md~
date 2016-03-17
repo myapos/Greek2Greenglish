@@ -1,13 +1,17 @@
+Greek2Greenglish
+================
+This application is for refactoring text files from Greek language to greenglish. Possible use cases could be in subtitle editing, in text entry between cross-platform applications etc. The program is written in Java language and is in the form of executable jar. You can download either jar file or source code.
+
 Instructions 
+================  
+ 1. In order to download Greek2GreenglishUpdated.jar file visit path 
+     https://github.com/myapos/Greek2Greenglish/tree/master/Greek2GreenglishUpdated/dist and select view raw. 
+     Then run Greek2Greenglish from command line giving java -jar Greek2GreenglishUpdated.jar. A simple GUI will be displayed. 
+ -   Alternatively, you can run Greek2GreenglishUpdated.jar with double click but you have to give it execution rights first.
+ +   Alternatively, you can run Greek2GreenglishUpdated.jar with double click but you have to give it execution permission first.
+  2. User can select one or multiple text files with greek characters for refactoring to greenglish.
   
-  1. Download jar file and double click to it. Then a simple GUI is displayed. 
- -2. User can 
- -  a. select files whose names wants to rename
- -  b. select directories whose files that belongs to these directories wants to rename
- -  c. select text files with greek characters for refactoring to greenglish
- +2. User can select one or multiple text files with greek characters for refactoring to greenglish
-  
-  3. After selection user can press refactor or rename button depending on his selection and complete the process
+  3. After selection user can press refactor and complete the process.
 
 
 Screenshots
@@ -21,7 +25,7 @@ Screenshots
 ![screenshot4.png](https://github.com/myapos/Greek2Greenglish/blob/master/screenshots/screenshot4.png)
 
 Notes
-  
+================ 
  -Java 1.8+ has to be installed in user's system in order to run this application
  +Java 1.8+ has to be installed in user's system in order to run this application. This application was designed and
  +developed using Netbeans 8.02 IDE platform.
