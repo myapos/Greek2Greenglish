@@ -1,6 +1,6 @@
 Greek2Greenglish
 ================
-This application is for refactoring text files from Greek language to greenglish. Possible use cases could be in subtitle editing, in text entry between cross-platform applications and more. The program is written in Java language and is in the form of executable jar. You can download either jar file or source code.
+This application is for refactoring text files from Greek language to greenglish. Possible use cases could be in subtitle editing, in text entry between cross-platform applications and more. The program is written in Java language and is in the form of executable jar. You can download either jar file or source code. 
 
 Instructions 
 ================  
@@ -26,4 +26,4 @@ Java 1.8+ JDK has to be installed in user's system in order to run this applicat
 Development Tools - Other useful information
 ================
 This project was developed using Netbeans IDE 8.0.2. platform. The graphical interface was designed with Swing library.
-Finally testing of the application was achieved by using JUnit 4.10 library.
+Finally, testing of the application was achieved by using JUnit 4.10 library.
