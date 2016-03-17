@@ -21,7 +21,9 @@ Screenshots
 
 Notes
 ================ 
- -Java 1.8+ has to be installed in user's system in order to run this application
- +Java 1.8+ has to be installed in user's system in order to run this application. This application was designed and
- +developed using Netbeans 8.02 IDE platform.
-  This application is published under GPL license
+Java 1.8+ JDK has to be installed in user's system in order to run this application. This application is published under GPL license.
+
+Development Tools - Other useful information
+================
+This project was developed using Netbeans IDE 8.0.2. platform. The graphical interface was designed with Swing library.
+Finally testing of the application was achieved by using JUnit 4.10 library.
